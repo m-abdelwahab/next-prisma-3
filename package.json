@@ -8,13 +8,21 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts --compiler-options '{\"module\":\"CommonJS\"}'"
+  },
   "dependencies": {
+    "@prisma/client": "^3.0.2",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/react": "^17.0.20",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "prisma": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
   }
 }
